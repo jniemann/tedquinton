@@ -12,7 +12,7 @@ import React, {
 import Preload from "../components/Preload";
 import Transition from "../components/Transition";
 import Menu from "../components/Menu";
-import { useLenis } from "./LenisContext";
+//import { useLenis } from "./LenisContext";
 // import SplitType from "split-type";
 import { company } from "@/database/company";
 // import Plyr from "plyr-react";
