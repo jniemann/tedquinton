@@ -38,7 +38,7 @@ const AnimationContext = createContext<AnimationContextType | null>(null);
 export const AnimationProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
-  const { lenis } = useLenis();
+  //const { lenis } = useLenis();
 
   const stdDuration = 0.8;
   const logoRef = useRef<HTMLDivElement>(null);
