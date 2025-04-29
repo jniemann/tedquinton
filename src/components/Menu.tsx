@@ -8,6 +8,7 @@ import { useAnimation } from "../contexts/AnimationContext";
 import Word from '../components/Word'
 import { socialNetworks } from "@/database/socialNetworks";
 import { company } from "@/database/company";
+import Link from "next/link";
 
 const items = [
   "https://cdn.prod.website-files.com/66601c7c6b0d48cf88bbe075/66601c7c6b0d48cf88bbe127_Menu_Gallery%2001.jpg",
@@ -62,9 +63,9 @@ export default function Navbar() {
         <div className="menu-col is-right">
           <div className="menu-list">
             {mainMenu.filter(item => item?.active).map((item) => (
-              <a key={item.href + '-menu'} href={item.href} className="menu-link w-inline-block" w--current="">
+              <Link key={item.href + '-menu'} href={item.href} className="menu-link w-inline-block" w--current="">
                 <div className="menu-link_text">{item.label}</div>
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -73,9 +74,9 @@ export default function Navbar() {
               <div className="footer-bot_left">
                 <div className="footer-menu_holder is-menu">
                   {socialNetworks?.filter(item => item.active).map((item) => (
-                    <a key={item?.link + "-desktop"} h-effect="" href={item?.link} target="_blank" className="footer-link w-inline-block">
+                    <Link key={item?.link + "-desktop"} h-effect="" href={item?.link} target="_blank" className="footer-link w-inline-block">
                       <Word text={item?.name} color="white" />
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -93,9 +94,9 @@ export default function Navbar() {
         <div className="mobile-menu-bot">
           <div className="footer-menu_holder is-menu mainmenu-fade">
             {socialNetworks?.filter(item => item.active).map((item) => (
-              <a key={item?.link + "-mobile"} h-effect="" href={item?.link} target="_blank" className="footer-link w-inline-block">
+              <Link key={item?.link + "-mobile"} h-effect="" href={item?.link} target="_blank" className="footer-link w-inline-block">
                 <Word text={item?.name} color="white" />
-              </a>
+              </Link>
             ))}
           </div>
           <p className="mobile-extra_p mainmenu-fade">All rights reserved {company?.name}</p>
