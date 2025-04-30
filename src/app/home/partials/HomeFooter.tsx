@@ -8,20 +8,20 @@ import Word from '../../../components/Word'
 // import { socialNetworks } from "@/database/socialNetworks";
 import { homeFooterInfoBlock } from "@/database/homePage";
 // import Image from "next/image";
-// import Link from "next/link";
+import Link from "next/link";
 
 const Component = () => {
   return (
     <>
       {homeFooterInfoBlock.map(item =>
-        // <Link key={item?.link + '-deslktop'} t-white="" h-effect="" href={item?.link} className="home-footer-info_block w-inline-block">
-        <Word text={item?.title} />
-        //   <p className="home-footer_p">{item?.description}</p>
-        //   <div className="footer-info-icon_holder">
-        //     <Image src={plusIcon} loading="eager" alt="" className="footer-info_icon" />
-        //     <Image src={arrowIcon} loading="eager" alt="" className="footer-info_icon" />
-        //   </div>
-        // </Link>
+        <Link key={item?.link + '-deslktop'} t-white="" h-effect="" href={item?.link} className="home-footer-info_block w-inline-block">
+          <Word text={item?.title} />
+          {/* <p className="home-footer_p">{item?.description}</p> */}
+          {/* <div className="footer-info-icon_holder"> */}
+          {/* <Image src={plusIcon} loading="eager" alt="" className="footer-info_icon" /> */}
+          {/* <Image src={arrowIcon} loading="eager" alt="" className="footer-info_icon" /> */}
+          {/* </div> */}
+        </Link>
       )}
 
       {/* <div grid-fade_trigger="" className="home-footer_component desktop-flex">
