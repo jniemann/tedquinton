@@ -16,7 +16,7 @@
 // import MenuButton from '../../components/MenuButton'
 // import Egg from '../../components/Egg'
 // import VideoPopUp from './partials/VideoPopUp'
-// import Footer from './partials/HomeFooter'
+import Footer from './partials/HomeFooter'
 import "./styles.css"
 
 
@@ -152,11 +152,11 @@ const Component = () => {
                 )}
               </div>
             </div>
-          </div>
+                </div> */}
 
-          <Footer />
+      <Footer />
 
-          <div className="logo-holder hide">
+      {/* <div className="logo-holder hide">
             <div className="logo-text_holder">
               <img src={company?.logoText} loading="eager" alt="" className="logo-text" />
             </div>
