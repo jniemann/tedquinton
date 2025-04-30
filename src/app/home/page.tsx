@@ -1,6 +1,6 @@
 "use client"
 
-import Lottie from "lottie-react"
+//import Lottie from "lottie-react"
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -83,7 +83,8 @@ const Component = () => {
                 <div className="video-component clickable" >
                   <div className="video-bg" >
                     {(typeof window === "undefined" || typeof document === 'undefined') && (
-                      <Lottie animationData={company?.animatedLogo} loop={true} />
+                      // <Lottie animationData={company?.animatedLogo} loop={true} />
+                      <></>
                     )}
                   </div>
 
