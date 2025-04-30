@@ -1,31 +1,31 @@
 "use client"
-import Lottie from "lottie-react"
-import Image from "next/image";
-import Link from "next/link";
-import {
-  company
-} from '@/database/company';
-import {
-  homeFooterInfoBlock,
-  homeSectionFour,
-  homeSectionOne,
-  homeSectionThree,
-  homeSectionTwo
-} from '@/database/homePage';
-import { useCurrentTime } from '../../hooks/useCurrentTime';
-import MenuButton from '../../components/MenuButton'
-import Egg from '../../components/Egg'
-import VideoPopUp from './partials/VideoPopUp'
-import Footer from './partials/HomeFooter'
+// import Lottie from "lottie-react"
+// import Image from "next/image";
+// import Link from "next/link";
+// import {
+//   company
+// } from '@/database/company';
+// import {
+//   homeFooterInfoBlock,
+//   homeSectionFour,
+//   homeSectionOne,
+//   homeSectionThree,
+//   homeSectionTwo
+// } from '@/database/homePage';
+// import { useCurrentTime } from '../../hooks/useCurrentTime';
+// import MenuButton from '../../components/MenuButton'
+// import Egg from '../../components/Egg'
+// import VideoPopUp from './partials/VideoPopUp'
+// import Footer from './partials/HomeFooter'
 import "./styles.css"
 
 
 const Component = () => {
-  const currentTime = useCurrentTime();
+  //const currentTime = useCurrentTime();
 
   return (
     <>
-      <div className="page-wrapper home-page">
+      {/* <div className="page-wrapper home-page">
         <div className="mobile-text_logo">
           <Link t-white="" pload="" href="/" aria-current="page" className="head-logo_holder w-inline-block w--current" >
             <div className="head-logo_height" />
@@ -148,7 +148,6 @@ const Component = () => {
                       <div className="grid-mobi_name">{item?.mainTitle}</div>
                     </div>
                     <Link href="#" className="image-item_overlay w-inline-block" />
-                    {/* <Link href={`/work/${item?.slug}`} className="image-item_overlay w-inline-block" /> */}
                   </div>
                 )}
               </div>
@@ -157,7 +156,6 @@ const Component = () => {
 
           <Footer />
 
-          {/* logo mobile */}
           <div className="logo-holder hide">
             <div className="logo-text_holder">
               <img src={company?.logoText} loading="eager" alt="" className="logo-text" />
@@ -172,7 +170,7 @@ const Component = () => {
         </div>
       </div>
 
-      <Egg />
+      <Egg /> */}
     </>
   );
 }

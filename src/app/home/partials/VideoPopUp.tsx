@@ -4,6 +4,7 @@ import Word from '../../../components/Word'
 
 const Component = () => {
   const { video } = homeSectionTwo
+
   return (
     <div className="video-popup" >
       <div className="video-holder" >
