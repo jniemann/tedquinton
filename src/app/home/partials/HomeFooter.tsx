@@ -1,19 +1,19 @@
 "use client"
-import { mainMenu } from "@/database/mainMenu";
-import Lottie from "lottie-react"
-import Word from '../../../components/Word'
-import plusIcon from '../../../assets/icons/plus_icon.svg'
-import arrowIcon from '../../../assets/icons/arrow_icon.svg'
-import { company } from "@/database/company";
-import { socialNetworks } from "@/database/socialNetworks";
-import { homeFooterInfoBlock } from "@/database/homePage";
-import Image from "next/image";
-import Link from "next/link";
+// import { mainMenu } from "@/database/mainMenu";
+// import Lottie from "lottie-react"
+// import Word from '../../../components/Word'
+// import plusIcon from '../../../assets/icons/plus_icon.svg'
+// import arrowIcon from '../../../assets/icons/arrow_icon.svg'
+// import { company } from "@/database/company";
+// import { socialNetworks } from "@/database/socialNetworks";
+// import { homeFooterInfoBlock } from "@/database/homePage";
+// import Image from "next/image";
+// import Link from "next/link";
 
 const Component = () => {
   return (
     <>
-      <div grid-fade_trigger="" className="home-footer_component desktop-flex">
+      {/* <div grid-fade_trigger="" className="home-footer_component desktop-flex">
         <div hover-fade="" className="home-footer_layout">
           <div className="home-footer_row">
             <div className="home-footer_info">
@@ -128,7 +128,7 @@ const Component = () => {
             <p easter-fade="" className="paragraph">All rights reserved {company?.name}</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
