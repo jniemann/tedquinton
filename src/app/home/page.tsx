@@ -1,18 +1,19 @@
 "use client"
+
 // import Lottie from "lottie-react"
-// import Image from "next/image";
-// import Link from "next/link";
-// import {
-//   company
-// } from '@/database/company';
-// import {
-//   homeFooterInfoBlock,
-//   homeSectionFour,
-//   homeSectionOne,
-//   homeSectionThree,
-//   homeSectionTwo
-// } from '@/database/homePage';
-// import { useCurrentTime } from '../../hooks/useCurrentTime';
+import Image from "next/image";
+import Link from "next/link";
+import {
+  company
+} from '@/database/company';
+import {
+  homeFooterInfoBlock,
+  homeSectionFour,
+  homeSectionOne,
+  homeSectionThree,
+  homeSectionTwo
+} from '@/database/homePage';
+import { useCurrentTime } from '../../hooks/useCurrentTime';
 // import MenuButton from '../../components/MenuButton'
 // import Egg from '../../components/Egg'
 // import VideoPopUp from './partials/VideoPopUp'
@@ -21,11 +22,11 @@ import "./styles.css"
 
 
 const Component = () => {
-  //const currentTime = useCurrentTime();
+  const currentTime = useCurrentTime();
 
   return (
     <>
-      {/* <div className="page-wrapper home-page">
+      <div className="page-wrapper home-page">
         <div className="mobile-text_logo">
           <Link t-white="" pload="" href="/" aria-current="page" className="head-logo_holder w-inline-block w--current" >
             <div className="head-logo_height" />
@@ -33,13 +34,13 @@ const Component = () => {
           </Link>
         </div>
 
-        <MenuButton />
+        {/* <MenuButton /> */}
 
         <div className="floating-title_holder">
           <div className="body-copy">{homeSectionFour?.title}<br />({homeSectionFour?.works.filter(item => item?.active).length})</div>
         </div>
 
-        <VideoPopUp />
+        {/* <VideoPopUp /> */}
 
         <div className="image-grid-info_holder">
           <div image-grid_title="" mask-in="" className="body-copy"></div>
@@ -81,7 +82,7 @@ const Component = () => {
 
                 <div className="video-component clickable" >
                   <div className="video-bg" >
-                    <Lottie animationData={company?.animatedLogo} loop={true} />
+                    {/* <Lottie animationData={company?.animatedLogo} loop={true} /> */}
                   </div>
 
                   <div className="video-play">
@@ -152,11 +153,11 @@ const Component = () => {
                 )}
               </div>
             </div>
-                </div> */}
+          </div>
 
-      <Footer />
+          <Footer />
 
-      {/* <div className="logo-holder hide">
+          <div className="logo-holder hide">
             <div className="logo-text_holder">
               <img src={company?.logoText} loading="eager" alt="" className="logo-text" />
             </div>
@@ -170,7 +171,7 @@ const Component = () => {
         </div>
       </div>
 
-      <Egg /> */}
+      {/* <Egg /> */}
     </>
   );
 }

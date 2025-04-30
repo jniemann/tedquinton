@@ -1,11 +1,11 @@
 "use client"
-// import { mainMenu } from "@/database/mainMenu";
+import { mainMenu } from "@/database/mainMenu";
 // import Lottie from "lottie-react"
 import Word from '../../../components/Word'
 import plusIcon from '../../../assets/icons/plus_icon.svg'
 import arrowIcon from '../../../assets/icons/arrow_icon.svg'
-// import { company } from "@/database/company";
-// import { socialNetworks } from "@/database/socialNetworks";
+import { company } from "@/database/company";
+import { socialNetworks } from "@/database/socialNetworks";
 import { homeFooterInfoBlock } from "@/database/homePage";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,18 +13,7 @@ import Link from "next/link";
 const Component = () => {
   return (
     <>
-      {homeFooterInfoBlock.map(item =>
-        <Link key={item?.link + '-deslktop'} t-white="" h-effect="" href={item?.link} className="home-footer-info_block w-inline-block">
-          <Word text={item?.title} />
-          <p className="home-footer_p">{item?.description}</p>
-          <div className="footer-info-icon_holder">
-            <Image src={plusIcon} loading="eager" alt="" className="footer-info_icon" />
-            <Image src={arrowIcon} loading="eager" alt="" className="footer-info_icon" />
-          </div>
-        </Link>
-      )}
-
-      {/* <div grid-fade_trigger="" className="home-footer_component desktop-flex">
+      <div grid-fade_trigger="" className="home-footer_component desktop-flex">
         <div hover-fade="" className="home-footer_layout">
           <div className="home-footer_row">
             <div className="home-footer_info">
@@ -46,7 +35,7 @@ const Component = () => {
               <div className="footer-col">
                 <div className="footer-logo_holder">
                   <div className="sp-anim_holder">
-                    <Lottie animationData={company?.animatedLogoBold} loop className="sp-anim_container" />
+                    {/* <Lottie animationData={company?.animatedLogoBold} loop className="sp-anim_container" /> */}
                   </div>
                 </div>
               </div>
@@ -139,7 +128,7 @@ const Component = () => {
             <p easter-fade="" className="paragraph">All rights reserved {company?.name}</p>
           </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 }
