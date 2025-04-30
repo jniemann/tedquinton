@@ -82,7 +82,9 @@ const Component = () => {
 
                 <div className="video-component clickable" >
                   <div className="video-bg" >
-                    <Lottie animationData={company?.animatedLogo} loop={true} />
+                    {(typeof window === "undefined" || typeof document === 'undefined') && (
+                      <Lottie animationData={company?.animatedLogo} loop={true} />
+                    )}
                   </div>
 
                   <div className="video-play">
