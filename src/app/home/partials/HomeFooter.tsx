@@ -1,6 +1,5 @@
 "use client"
 import { mainMenu } from "@/database/mainMenu";
-import Lottie from "lottie-react"
 import Word from '../../../components/Word'
 import plusIcon from '../../../assets/icons/plus_icon.svg'
 import arrowIcon from '../../../assets/icons/arrow_icon.svg'
@@ -9,6 +8,13 @@ import { socialNetworks } from "@/database/socialNetworks";
 import { homeFooterInfoBlock } from "@/database/homePage";
 import Image from "next/image";
 import Link from "next/link";
+
+import dynamic from 'next/dynamic';
+
+const Lottie = dynamic(
+  () => import('lottie-react').then((mod) => mod.default),
+  { ssr: false }
+);
 
 const Component = () => {
   return (
