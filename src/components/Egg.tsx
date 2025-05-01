@@ -1,6 +1,6 @@
 "use client"
 import { company } from '@/database/company';
-import Lottie from "lottie-react"
+//import Lottie from "lottie-react"
 import { areas } from "@/database/areas";
 
 const Component = () => {
@@ -22,7 +22,7 @@ const Component = () => {
 
       <div className="egg-right">
         <div className="sp-anim_holder">
-          <Lottie animationData={company?.animatedLogo} autoplay={false} loop={false} className={'sp-anim_container'} />
+          {/* <Lottie animationData={company?.animatedLogo} autoplay={false} loop={false} className={'sp-anim_container'} /> */}
         </div>
       </div>
     </div>

@@ -14,9 +14,9 @@ import {
   homeSectionTwo
 } from '@/database/homePage';
 import { useCurrentTime } from '../../hooks/useCurrentTime';
-// import MenuButton from '../../components/MenuButton'
-// import Egg from '../../components/Egg'
-// import VideoPopUp from './partials/VideoPopUp'
+import MenuButton from '../../components/MenuButton'
+import Egg from '../../components/Egg'
+import VideoPopUp from './partials/VideoPopUp'
 import Footer from './partials/HomeFooter'
 import "./styles.css"
 
@@ -34,13 +34,13 @@ const Component = () => {
           </Link>
         </div>
 
-        {/* <MenuButton /> */}
+        <MenuButton />
 
         <div className="floating-title_holder">
           <div className="body-copy">{homeSectionFour?.title}<br />({homeSectionFour?.works.filter(item => item?.active).length})</div>
         </div>
 
-        {/* <VideoPopUp /> */}
+        <VideoPopUp />
 
         <div className="image-grid-info_holder">
           <div image-grid_title="" mask-in="" className="body-copy"></div>
@@ -174,7 +174,7 @@ const Component = () => {
         </div>
       </div>
 
-      {/* <Egg /> */}
+      <Egg />
     </>
   );
 }
