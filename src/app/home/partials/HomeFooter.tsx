@@ -1,6 +1,6 @@
 "use client"
 import { mainMenu } from "@/database/mainMenu";
-// import Lottie from "lottie-react"
+import Lottie from "lottie-react"
 import Word from '../../../components/Word'
 import plusIcon from '../../../assets/icons/plus_icon.svg'
 import arrowIcon from '../../../assets/icons/arrow_icon.svg'
@@ -35,7 +35,7 @@ const Component = () => {
               <div className="footer-col">
                 <div className="footer-logo_holder">
                   <div className="sp-anim_holder">
-                    {/* <Lottie animationData={company?.animatedLogoBold} loop className="sp-anim_container" /> */}
+                    <Lottie animationData={company?.animatedLogoBold} loop className="sp-anim_container" />
                   </div>
                 </div>
               </div>
