@@ -16,7 +16,7 @@ import Menu from "../components/Menu";
 import { useLenis } from "./LenisContext";
 // import SplitType from "split-type";
 import { company } from "@/database/company";
-import "plyr-react/dist/plyr.css";
+// import "plyr-react/dist/plyr.css";
 
 // const Plyr = dynamic(() => import('plyr-react'), {
 //   ssr: false,
