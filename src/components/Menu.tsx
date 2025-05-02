@@ -1,7 +1,6 @@
 
 
 "use client";
-import Image from "next/image";
 import Word from './Word'
 import { useAnimation } from "../contexts/AnimationContext";
 import { mainMenu, mainMenuImages } from "@/database/mainMenu";
@@ -30,12 +29,12 @@ const Component = () => {
                     <div className="menu-inf_comp">
                       <div className="menu_img-holder">
                         <div className="menu-img_height" />
-                        <Image
+                        <img
                           className="img-fill"
                           width={131}
                           height={197}
                           src={src}
-                          alt={`Imagen {index + 1}`}
+                          alt={'Menu Image'}
                         />
                       </div>
                     </div>
