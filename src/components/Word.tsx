@@ -1,7 +1,7 @@
 "use client"
-// import gsap from "gsap";
-// import { useGSAP } from "@gsap/react";
-// import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useRef } from "react";
 
 interface ComponentProps {
@@ -35,46 +35,46 @@ const Component = ({ text, color = 'black', hoverColor, activeColor, parentClass
     </span>
   );
 
-  // useGSAP(() => {
-  //   if (typeof window === "undefined") return
-  //   if (typeof document === 'undefined') return;
+  useGSAP(() => {
+    if (typeof window === "undefined") return
+    if (typeof document === 'undefined') return;
 
-  //   gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger);
 
-  //   const scope = containerRef.current;
-  //   if (!scope) return;
+    const scope = containerRef.current;
+    if (!scope) return;
 
-  //   const text1 = scope.querySelector(".word1");
-  //   const text2 = scope.querySelector(".word2");
+    const text1 = scope.querySelector(".word1");
+    const text2 = scope.querySelector(".word2");
 
-  //   if (!text1 || !text2) return;
+    if (!text1 || !text2) return;
 
-  //   const chars1 = text1.querySelectorAll(".char");
-  //   const chars2 = text2.querySelectorAll(".char");
+    const chars1 = text1.querySelectorAll(".char");
+    const chars2 = text2.querySelectorAll(".char");
 
-  //   const staggerAmount = chars1.length * 0.025;
+    const staggerAmount = chars1.length * 0.025;
 
-  //   const tl = gsap.timeline({ paused: true });
+    const tl = gsap.timeline({ paused: true });
 
-  //   tl.to(chars1, {
-  //     yPercent: -100,
-  //     opacity: 0,
-  //     ease: "power1.out",
-  //     stagger: { amount: staggerAmount },
-  //   }, 0);
+    tl.to(chars1, {
+      yPercent: -100,
+      opacity: 0,
+      ease: "power1.out",
+      stagger: { amount: staggerAmount },
+    }, 0);
 
-  //   tl.from(chars2, {
-  //     yPercent: 100,
-  //     opacity: 0,
-  //     ease: "power1.out",
-  //     color: activeColor || hoverColor || color,
-  //     stagger: { amount: staggerAmount },
-  //   }, 0);
+    tl.from(chars2, {
+      yPercent: 100,
+      opacity: 0,
+      ease: "power1.out",
+      color: activeColor || hoverColor || color,
+      stagger: { amount: staggerAmount },
+    }, 0);
 
-  //   scope.onmouseenter = () => {
-  //     tl.restart();
-  //   };
-  // }, { scope: containerRef });
+    scope.onmouseenter = () => {
+      tl.restart();
+    };
+  }, { scope: containerRef });
 
   return (
     <div style={{ position: "relative", overflow: "hidden" }} ref={containerRef} className={parentClassName || ''} {...rest}>

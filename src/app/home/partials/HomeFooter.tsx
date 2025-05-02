@@ -8,13 +8,11 @@ import { socialNetworks } from "@/database/socialNetworks";
 import { homeFooterInfoBlock } from "@/database/homePage";
 import Image from "next/image";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 
-import dynamic from 'next/dynamic';
-
-const Lottie = dynamic(
-  () => import('lottie-react').then((mod) => mod.default),
-  { ssr: false }
-);
+const Lottie = dynamic(() => import('lottie-react'), {
+  ssr: false,
+});
 
 const Component = () => {
   return (

@@ -1,6 +1,4 @@
 "use client"
-
-//import Lottie from "lottie-react"
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -19,6 +17,12 @@ import Egg from '../../components/Egg'
 import VideoPopUp from './partials/VideoPopUp'
 import Footer from './partials/HomeFooter'
 import "./styles.css"
+
+import dynamic from "next/dynamic";
+
+const Lottie = dynamic(() => import('lottie-react'), {
+  ssr: false,
+});
 
 
 const Component = () => {
@@ -82,10 +86,7 @@ const Component = () => {
 
                 <div className="video-component clickable" >
                   <div className="video-bg" >
-                    {(typeof window === "undefined" || typeof document === 'undefined') && (
-                      // <Lottie animationData={company?.animatedLogo} loop={true} />
-                      <></>
-                    )}
+                    <Lottie animationData={company?.animatedLogo} loop={true} />
                   </div>
 
                   <div className="video-play">
@@ -152,6 +153,7 @@ const Component = () => {
                       <div className="grid-mobi_name">{item?.mainTitle}</div>
                     </div>
                     <Link href="#" className="image-item_overlay w-inline-block" />
+                    {/* <Link href={`/work/${item?.slug}`} className="image-item_overlay w-inline-block" /> */}
                   </div>
                 )}
               </div>
@@ -160,6 +162,7 @@ const Component = () => {
 
           <Footer />
 
+          {/* logo mobile */}
           <div className="logo-holder hide">
             <div className="logo-text_holder">
               <img src={company?.logoText} loading="eager" alt="" className="logo-text" />
