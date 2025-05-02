@@ -4,14 +4,14 @@ import { company } from "@/database/company"
 const Component = () => {
   return (
     <div team-item="contact-popup" role="listitem" className="team-col_item w-dyn-item">
-      {/* <Link
+      {/* <a
         data-swup-animation="to-black"
         href="/team-members/join-the-team"
         className="team-img_holder w-inline-block w-condition-invisible"
       >
         <div className="team-img_height"></div>
         <div className="team-img_overlay"></div>
-      </Link> */}
+      </a> */}
 
       <div className="team-name w-condition-invisible">
         Join the team

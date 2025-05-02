@@ -49,9 +49,9 @@ const Component = () => {
         <div className="menu-col is-right">
           <div className="menu-list">
             {mainMenu.filter(item => item?.active).map((item) => (
-              <Link key={item.href + '-menu'} href={item.href} className="menu-link w-inline-block" w--current="">
+              <a key={item.href + '-menu'} href={item.href} className="menu-link w-inline-block" w--current="">
                 <div className="menu-link_text">{item.label}</div>
-              </Link>
+              </a>
             ))}
           </div>
 
@@ -60,9 +60,9 @@ const Component = () => {
               <div className="footer-bot_left">
                 <div className="footer-menu_holder is-menu">
                   {socialNetworks?.filter(item => item.active).map((item) => (
-                    <Link key={item?.link + "-desktop"} h-effect="" href={item?.link} target="_blank" className="footer-link w-inline-block">
+                    <a key={item?.link + "-desktop"} h-effect="" href={item?.link} target="_blank" className="footer-link w-inline-block">
                       <Word text={item?.name} color="white" />
-                    </Link>
+                    </a>
                   ))}
                 </div>
               </div>
@@ -80,9 +80,9 @@ const Component = () => {
         <div className="mobile-menu-bot">
           <div className="footer-menu_holder is-menu mainmenu-fade">
             {socialNetworks?.filter(item => item.active).map((item) => (
-              <Link key={item?.link + "-mobile"} h-effect="" href={item?.link} target="_blank" className="footer-link w-inline-block">
+              <a key={item?.link + "-mobile"} h-effect="" href={item?.link} target="_blank" className="footer-link w-inline-block">
                 <Word text={item?.name} color="white" />
-              </Link>
+              </a>
             ))}
           </div>
           <p className="mobile-extra_p mainmenu-fade">All rights reserved {company?.name}</p>

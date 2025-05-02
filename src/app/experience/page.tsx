@@ -19,7 +19,7 @@ const Component = () => {
     <div archive-page="" className="page-wrapper is-archive is-black">
       <MenuButton color="white" />
 
-      <Link
+      <a
         t-white=""
         h-effect=""
         pload=""
@@ -27,7 +27,7 @@ const Component = () => {
         className="work-page_title w-inline-block"
       >
         <Word text="Case studies" />
-      </Link>
+      </a>
 
       <div className="image-grid-info_holder">
         <div image-grid_title="" mask-in="" className="body-copy">.</div>
@@ -36,10 +36,10 @@ const Component = () => {
 
       <div className="global-head">
         <div className="global-head_layout">
-          <Link t-white="" pload="" href="/" className="head-logo_holder w-inline-block" >
+          <a t-white="" pload="" href="/" className="head-logo_holder w-inline-block" >
             <div className="head-logo_height"></div>
             <Lottie animationData={logoBold} loop className="head-logo is-white" />
-          </Link>
+          </a>
           <div pload="" className="head-page_name">
             <div className="page-name_text">{pageTitle}</div>
           </div>
@@ -112,9 +112,9 @@ const Component = () => {
           </div>
         </div>
 
-        <Link href="#swup" className="work-top_holder w-inline-block w--current">
+        <a href="#swup" className="work-top_holder w-inline-block w--current">
           <div className="top-text">Back to Top</div>
-        </Link>
+        </a>
       </div>
 
       <div archive-sync="" className="archive-hover_component w-dyn-list">
@@ -208,7 +208,7 @@ const Component = () => {
                   </div>
                 </div>
               </div>
-              <Link
+              <a
                 t-white=""
                 archive-fade=""
                 href={`/work/${item?.slug}`}
@@ -223,7 +223,7 @@ const Component = () => {
                   />
                 </div>
                 <Word text="View Full Case study" />
-              </Link>
+              </a>
             </div>
           )}
         </div>

@@ -19,11 +19,11 @@ const Component = () => {
           <div className="footer-bot_layout">
             <div className="footer-bot_left">
               <div className="footer-col">
-                <Link href="/" className="footer-logo_holder w-inline-block">
+                <a href="/" className="footer-logo_holder w-inline-block">
                   <div className="sp-anim_holder">
                     <Lottie animationData={company?.animatedLogoBold} loop={true} className="sp-anim_container" />
                   </div>
-                </Link>
+                </a>
               </div>
               <p easter-fade="" className="paragraph">All rights reserved {company?.name}</p>
             </div>
@@ -31,24 +31,24 @@ const Component = () => {
             <div easter-fade="" className="footer-bot_right">
               <div easter-fade="" className="footer-menu_holder">
                 {mainMenu.filter((item) => item.active).map((item) => (
-                  <Link key={item?.href} t-white="" h-effect="" href={item?.href} className="footer-link w-inline-block">
+                  <a key={item?.href} t-white="" h-effect="" href={item?.href} className="footer-link w-inline-block">
                     <Word text={item?.label} color="white" />
-                  </Link>
+                  </a>
                 ))}
               </div>
 
               <div className="footer-menu_holder">
                 {socialNetworks?.filter(item => item.active).map((item) => (
-                  <Link key={item?.link} t-black="" h-effect="" href={item?.link} target="_blank" className="footer-link w-inline-block">
+                  <a key={item?.link} t-black="" h-effect="" href={item?.link} target="_blank" className="footer-link w-inline-block">
                     <Word text={item.name} color="white" />
-                  </Link>
+                  </a>
                 ))}
               </div>
 
               {company?.emails?.info && (
-                <Link href={`mailto:${company?.emails?.info}`} className="footer-link w-inline-block">
+                <a href={`mailto:${company?.emails?.info}`} className="footer-link w-inline-block">
                   <div mask-in="" className="footer-link_text">{company?.emails?.info}</div>
-                </Link>
+                </a>
               )}
             </div>
           </div>
@@ -65,17 +65,17 @@ const Component = () => {
             <div easter-fade="" className="footer-bot_right">
               <div easter-fade="" className="footer-menu_holder">
                 {mainMenu.filter((item) => item.active).map((item) => (
-                  <Link key={item?.href} h-effect="" href={item?.href} className="footer-link w-inline-block">
+                  <a key={item?.href} h-effect="" href={item?.href} className="footer-link w-inline-block">
                     <Word text={item?.label} color="white" />
-                  </Link>
+                  </a>
                 ))}
               </div>
 
               <div className="footer-menu_holder">
                 {socialNetworks?.filter(item => item.active).map((item) => (
-                  <Link key={item?.link} t-black="" h-effect="" href={item?.link} target="_blank" className="footer-link w-inline-block">
+                  <a key={item?.link} t-black="" h-effect="" href={item?.link} target="_blank" className="footer-link w-inline-block">
                     <Word text={item.name} color="white" />
-                  </Link>
+                  </a>
                 ))}
               </div>
 

@@ -12,11 +12,11 @@ const Component = ({ pageTitle }: ComponentProps) => {
   return (
     <div className="global-head">
       <div className="global-head_layout">
-        <Link t-white="" pload="" href="/" className="head-logo_holder w-inline-block" >
+        <a t-white="" pload="" href="/" className="head-logo_holder w-inline-block" >
           <div className="head-logo_height" />
           <Image src={company?.logoBold} loading="eager" alt="" className="head-logo" />
           <Image src={company?.logoBold} loading="eager" alt="" className="head-logo-white" />
-        </Link>
+        </a>
 
 
         <div pload="" className="head-page_name">

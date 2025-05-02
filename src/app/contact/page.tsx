@@ -28,23 +28,23 @@ const Component = () => {
           <div className="contact-left">
             <div className="contact-row">
               <div className="contact-col">
-                <Link t-white="" href="/" className="home-link w-inline-block">
+                <a t-white="" href="/" className="home-link w-inline-block">
                   <h3 pload="" className="contact-logo_text">{company?.name}</h3>
-                </Link>
+                </a>
               </div>
               <div className="contact-col">
                 <div className="contact-menu">
                   <div pload-body="" className="contact-items_block">
                     <span className="line">
-                      <Link href={`tel:${company?.phone}`} className="contact-link_holder w-inline-block" >
+                      <a href={`tel:${company?.phone}`} className="contact-link_holder w-inline-block" >
                         <div className="contact-link_text">{company?.phone}</div>
-                      </Link>
+                      </a>
                     </span>
 
                     <span className="line">
-                      <Link href={`mailto:${company?.emails?.info}`} className="contact-link_holder w-inline-block" >
+                      <a href={`mailto:${company?.emails?.info}`} className="contact-link_holder w-inline-block" >
                         <div className="contact-link_text">{company?.emails?.info}</div>
-                      </Link>
+                      </a>
                     </span>
                   </div>
 
@@ -56,14 +56,14 @@ const Component = () => {
                       <br />
                     </div>
 
-                    <Link pload-stagger="" href={company?.googleMaps} target="_blank" className="contact-text_btn-holder w-inline-block" >
+                    <a pload-stagger="" href={company?.googleMaps} target="_blank" className="contact-text_btn-holder w-inline-block" >
                       <div className="contact-link_text">Open in Google Maps</div>
 
                       <div className="link-icon_holder">
                         <Image src={plusIcon} loading="eager" alt="" className="footer-info_icon" />
                         <Image src={arrowIcon} loading="eager" alt="" className="footer-info_icon" />
                       </div>
-                    </Link>
+                    </a>
                   </div>
 
                   <div className="contact-items_block">
@@ -71,9 +71,9 @@ const Component = () => {
 
                     <div className="contact-items_list">
                       {mainMenu.filter(item => item?.active).map((item) => (
-                        <Link key={'contact-page-' + item?.href} pload-stagger="" h-effect="" href={item?.href} className="contact-index_link w-inline-block">
+                        <a key={'contact-page-' + item?.href} pload-stagger="" h-effect="" href={item?.href} className="contact-index_link w-inline-block">
                           <Word text={item?.label} color="white" />
-                        </Link>
+                        </a>
                       ))}
                     </div>
                   </div>
@@ -84,9 +84,9 @@ const Component = () => {
 
                     <div className="contact-items_list">
                       {socialNetworks?.filter(item => item.active).map((item) => (
-                        <Link key={item?.link + "-contact-page"} t-white="" h-effect="" pload-stagger="" href={item?.link} target="_blank" className="contact-index_link w-inline-block">
+                        <a key={item?.link + "-contact-page"} t-white="" h-effect="" pload-stagger="" href={item?.link} target="_blank" className="contact-index_link w-inline-block">
                           <Word text={item?.name} color="white" />
-                        </Link>
+                        </a>
                       ))}
                     </div>
                   </div>
@@ -94,11 +94,11 @@ const Component = () => {
               </div>
             </div>
 
-            <Link t-white="" href="/" className="contact-lottie_small w-inline-block">
+            <a t-white="" href="/" className="contact-lottie_small w-inline-block">
               <div className="lottie-component">
                 <Lottie animationData={company?.animatedLogoBold} loop className="lottie-el" />
               </div>
-            </Link>
+            </a>
           </div>
 
           <div className="contact-right">

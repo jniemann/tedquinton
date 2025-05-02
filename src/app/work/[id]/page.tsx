@@ -64,9 +64,9 @@ const Component = () => {
 
         <div className="page-content">
           <div logo-start="" className="single-layout">
-            <Link href="/work" className="allwork-mob-btn w-inline-block">
+            <a href="/work" className="allwork-mob-btn w-inline-block">
               <Word text="all work" />
-            </Link>
+            </a>
 
             <div className="single-images_holder">
               <div className="single-images_wrap">
@@ -183,7 +183,7 @@ const Component = () => {
                     <div className="single-next_mid">
                       <div className="all-btn_holder m-hide">
                         <div className="all-btn_layout">
-                          <Link
+                          <a
                             href="/work"
                             className="all-btn_flex w-inline-block"
                           >
@@ -204,23 +204,23 @@ const Component = () => {
                                 All Case Studies
                               </div>
                             </div>
-                          </Link>
+                          </a>
                         </div>
                       </div>
 
                       <div className="next-proj_component">
-                        <Link
+                        <a
                           href={`/work/${nextWorkInfo?.slug}`}
                           className="all-btn_text"
                         >
                           Next Project
-                        </Link>
-                        <Link
+                        </a>
+                        <a
                           href={`/work/${nextWorkInfo?.slug}`}
                           className="all-btn_text is-next"
                         >
                           View Now
-                        </Link>
+                        </a>
 
                         <div className="mobile-next_img-holder">
                           <div className="mobile-next_img-height">
@@ -291,7 +291,7 @@ const Component = () => {
           </div>
         </div>
 
-        <Link
+        <a
           t-black=""
           h-effect=""
           pload=""
@@ -299,7 +299,7 @@ const Component = () => {
           className="work-page_title w-inline-block"
         >
           <Word text="all case studies" />
-        </Link>
+        </a>
       </div>
     </>
   );

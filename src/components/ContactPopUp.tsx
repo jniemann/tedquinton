@@ -48,7 +48,7 @@ export default function Header() {
             <div className="sp-success w-form-done">
               <h3 className="success-head">Form submitted</h3>
               <div className="success-text">Thank you for contacting us. A member of our team will respond in due course.</div>
-              <Link href="#" className="explore-btn w-inline-block">
+              <a href="#" className="explore-btn w-inline-block">
                 <div className="submit-btn_text">Explore more</div>
                 <div className="submit-arrow w-embed">
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 22 22" fill="none">
@@ -57,7 +57,7 @@ export default function Header() {
                     </g>
                   </svg>
                 </div>
-              </Link>
+              </a>
             </div>
             <div className="w-form-fail">
               <div>Oops! Something went wrong while submitting the form.</div>

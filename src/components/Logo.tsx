@@ -8,11 +8,11 @@ export default function Logo() {
 
   return (
     <div className="mobile-text_logo" ref={refs.logoRef}>
-      <Link t-white="" href="/" aria-current="page" className="head-logo_holder w-inline-block w--current" >
+      <a t-white="" href="/" aria-current="page" className="head-logo_holder w-inline-block w--current" >
         <div className="head-logo_height">
         </div>
         <Image src="https://cdn.prod.website-files.com/66601c7c6b0d48cf88bbe06c/66601c7c6b0d48cf88bbe08f_logo-icon.svg" alt="" className="head-logo" />
-      </Link>
+      </a>
     </div>
   )
 }

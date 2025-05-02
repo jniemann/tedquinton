@@ -11,14 +11,14 @@ const Component = () => {
       <div news-page="" className="page-wrapper">
         <div className="global-head">
           <div className="global-head_layout">
-            <Link pload="" href="/" className="head-logo_holder w-inline-block">
+            <a pload="" href="/" className="head-logo_holder w-inline-block">
               <div className="head-logo_height"></div>
               <Image
                 src="https://cdn.prod.website-files.com/66601c7c6b0d48cf88bbe06c/66601c7c6b0d48cf88bbe08f_logo-icon.svg"
                 alt=""
                 className="head-logo"
               />
-            </Link>
+            </a>
             <div pload="" className="head-page_name">
               <div className="page-name_text">Work</div>
             </div>
@@ -61,7 +61,7 @@ const Component = () => {
                           role="listitem"
                           className="toggle-cat_item w-dyn-item"
                         >
-                          <Link
+                          <a
                             pload-stagger=""
                             h-effect=""
                             href="/news-categories/architecture"
@@ -70,14 +70,14 @@ const Component = () => {
                             <div h-item="" className="grid-toggle">
                               <Word text="architecture" />
                             </div>
-                          </Link>
+                          </a>
                         </div>
                         <div
                           hover-color="yellow"
                           role="listitem"
                           className="toggle-cat_item w-dyn-item"
                         >
-                          <Link
+                          <a
                             pload-stagger=""
                             h-effect=""
                             href="/news-categories/interior"
@@ -86,14 +86,14 @@ const Component = () => {
                             <div h-item="" className="grid-toggle">
                               <Word text="interior" />
                             </div>
-                          </Link>
+                          </a>
                         </div>
                         <div
                           hover-color="green"
                           role="listitem"
                           className="toggle-cat_item w-dyn-item"
                         >
-                          <Link
+                          <a
                             pload-stagger=""
                             h-effect=""
                             href="/news-categories/digital"
@@ -102,14 +102,14 @@ const Component = () => {
                             <div h-item="" className="grid-toggle">
                               <Word text="digital" />
                             </div>
-                          </Link>
+                          </a>
                         </div>
                         <div
                           hover-color="violet"
                           role="listitem"
                           className="toggle-cat_item w-dyn-item"
                         >
-                          <Link
+                          <a
                             pload-stagger=""
                             h-effect=""
                             href="/news-categories/research"
@@ -118,14 +118,14 @@ const Component = () => {
                             <div h-item="" className="grid-toggle">
                               <Word text="research" />
                             </div>
-                          </Link>
+                          </a>
                         </div>
                         <div
                           hover-color="orange"
                           role="listitem"
                           className="toggle-cat_item w-dyn-item"
                         >
-                          <Link
+                          <a
                             pload-stagger=""
                             h-effect=""
                             href="/news-categories/infrastructure"
@@ -134,7 +134,7 @@ const Component = () => {
                             <div h-item="" className="grid-toggle">
                               <Word text="infrastructure" />
                             </div>
-                          </Link>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -150,7 +150,7 @@ const Component = () => {
                           role="listitem"
                           className="news-item w-dyn-item"
                         >
-                          <Link
+                          <a
                             href={item?.link}
                             className="news-item_link w-inline-block"
                           >
@@ -163,15 +163,15 @@ const Component = () => {
                             />
                             <div className="news-head">{item.title}</div>
                             <div className="news-date">{item.date}</div>
-                          </Link>
+                          </a>
                         </div>
                       ))}
                     </div>
                   </div>
                 </div>
-                <Link href="#" className="work-top_holder w-inline-block">
+                <a href="#" className="work-top_holder w-inline-block">
                   <div className="top-text">Back to Top</div>
-                </Link>
+                </a>
               </div>
               <Footer />
             </div>

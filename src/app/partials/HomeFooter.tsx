@@ -22,14 +22,14 @@ const Component = () => {
           <div className="home-footer_row">
             <div className="home-footer_info">
               {homeFooterInfoBlock.map(item =>
-                <Link key={item?.link + '-deslktop'} t-white="" h-effect="" href={item?.link} className="home-footer-info_block w-inline-block">
+                <a key={item?.link + '-deslktop'} t-white="" h-effect="" href={item?.link} className="home-footer-info_block w-inline-block">
                   <Word text={item?.title} />
                   <p className="home-footer_p">{item?.description}</p>
                   <div className="footer-info-icon_holder">
                     <Image src={plusIcon} loading="eager" alt="" className="footer-info_icon" />
                     <Image src={arrowIcon} loading="eager" alt="" className="footer-info_icon" />
                   </div>
-                </Link>
+                </a>
               )}
             </div>
           </div>
@@ -49,23 +49,23 @@ const Component = () => {
             <div easter-fade="" className="footer-bot_right">
               <div easter-fade="" className="footer-menu_holder">
                 {mainMenu.filter(item => item.active).map((item) =>
-                  <Link key={item?.href + '-2'} h-effect="" href={item?.href} aria-current="page" className="footer-link w-inline-block">
+                  <a key={item?.href + '-2'} h-effect="" href={item?.href} aria-current="page" className="footer-link w-inline-block">
                     <Word text={item?.label} />
-                  </Link>
+                  </a>
                 )}
               </div>
 
               <div className="footer-menu_holder">
                 {socialNetworks.filter(item => item.active).map((item) =>
-                  <Link key={item?.name + '-1'} t-black="" h-effect="" href={item?.link} target="_blank" className="footer-link w-inline-block">
+                  <a key={item?.name + '-1'} t-black="" h-effect="" href={item?.link} target="_blank" className="footer-link w-inline-block">
                     <Word text={item?.name} />
-                  </Link>
+                  </a>
                 )}
               </div>
 
-              <Link href={`mailto:${company?.emails.info}`} className="footer-link w-inline-block">
+              <a href={`mailto:${company?.emails.info}`} className="footer-link w-inline-block">
                 <div mask-in="" className="footer-link_text">{company?.emails.info}</div>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@ const Component = () => {
           <div className="home-footer_row">
             <div className="home-footer_info">
               {homeFooterInfoBlock.map(item =>
-                <Link key={item?.link + '-mobile'} t-white="" h-effect="" href={item?.link} className="home-footer-info_block w-inline-block">
+                <a key={item?.link + '-mobile'} t-white="" h-effect="" href={item?.link} className="home-footer-info_block w-inline-block">
                   <img src={item?.image} loading="eager" alt="" className="hidden-contact_img" />
                   <Word text={item?.title} />
                   <p className="home-footer_p">{item?.description}</p>
@@ -86,7 +86,7 @@ const Component = () => {
                     <Image src={plusIcon} loading="eager" alt="" className="footer-info_icon" />
                     <Image src={arrowIcon} loading="eager" alt="" className="footer-info_icon" />
                   </div>
-                </Link>
+                </a>
               )}
             </div>
           </div>
@@ -99,17 +99,17 @@ const Component = () => {
             <div easter-fade="" className="footer-bot_right">
               <div easter-fade="" className="footer-menu_holder">
                 {mainMenu.filter(item => item.active).map((item) =>
-                  <Link key={item?.href + '-1'} h-effect="" href={item?.href} aria-current="page" className="footer-link w-inline-block w--current">
+                  <a key={item?.href + '-1'} h-effect="" href={item?.href} aria-current="page" className="footer-link w-inline-block w--current">
                     <Word text={item?.label} />
-                  </Link>
+                  </a>
                 )}
               </div>
 
               <div className="footer-menu_holder">
                 {socialNetworks.filter(item => item.active).map((item) =>
-                  <Link key={item?.name + '-2'} t-black="" h-effect="" href={item?.link} target="_blank" className="footer-link w-inline-block">
+                  <a key={item?.name + '-2'} t-black="" h-effect="" href={item?.link} target="_blank" className="footer-link w-inline-block">
                     <Word text={item?.name} />
-                  </Link>
+                  </a>
                 )}
               </div>
 

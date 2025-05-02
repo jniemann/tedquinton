@@ -58,18 +58,18 @@ const Component = () => {
           <h3 className="logo-reveal"></h3>
         </div>
 
-        <Link data-swup-animation="to-black" h-effect="" pload="" href="/experience" className="work-page_title w-inline-block">
+        <a data-swup-animation="to-black" h-effect="" pload="" href="/experience" className="work-page_title w-inline-block">
           <Word text="experience" color="white" />
-        </Link>
+        </a>
 
         <div className="global-head">
           <div className="global-head_layout">
-            <Link pload="" href="/" className="head-logo_holder w-inline-block">
+            <a pload="" href="/" className="head-logo_holder w-inline-block">
               <div className="head-logo_height" />
               {areaInfo && (
                 <img src={areaInfo?.img} alt="" className="head-logo" />
               )}
-            </Link>
+            </a>
 
             <div pload="" className="head-page_name">
               <div className="page-name_text">Work</div>
@@ -81,10 +81,10 @@ const Component = () => {
           <div id="our-work" className="work-layout">
             <div className="mob-work_toggle-holder">
               {areaInfo && (
-                <Link hover-color={areaInfo?.color} h-effect="" pload="" href="/work" className="current-item w-inline-block">
+                <a hover-color={areaInfo?.color} h-effect="" pload="" href="/work" className="current-item w-inline-block">
                   <Word text={areaInfo?.name} hoverColor={areaInfo?.color} activeColor={areaInfo?.color} />
                   <Image src={crossImage} alt="x" />
-                </Link>
+                </a>
               )}
             </div>
 
@@ -94,10 +94,10 @@ const Component = () => {
 
             <div className="work-col is-static">
               {areaInfo && (
-                <Link hover-color={areaInfo?.color} h-effect="" pload="" href="/work" className="current-item w-inline-block">
+                <a hover-color={areaInfo?.color} h-effect="" pload="" href="/work" className="current-item w-inline-block">
                   <Word text={areaInfo?.name} hoverColor={areaInfo?.color} activeColor={areaInfo?.color} />
                   <Image src={crossImage} alt="x" />
-                </Link>
+                </a>
               )}
 
               <div pload="" className="work-toggle_holder">
@@ -110,7 +110,7 @@ const Component = () => {
                 <div role="list" className="areas-work_list w-dyn-items">
                   {filteredWorks.map((item, index) =>
                     <div key={item?.slug} main-title={item?.mainTitle} work-title={item.workTitle} work-copy={item?.workCopySummary} pload-img="" inf-item="" role="listitem" className="areas-work_item w-dyn-item" >
-                      <Link href={`/work/${item?.slug}`} className="areas-work_link w-inline-block">
+                      <a href={`/work/${item?.slug}`} className="areas-work_link w-inline-block">
                         <div className="work-grid_img-holder">
                           <div className="work-grid_img-height">
                             <img src={item?.image} alt="image" className="img-fill" />
@@ -121,7 +121,7 @@ const Component = () => {
                             <div className="work-number_text">{String(index + 1).padStart(2, '0')}</div>
                           </div>
                         </div>
-                      </Link>
+                      </a>
 
                       <div className="category_wrap w-dyn-list">
                         <div role="list" className="category-list w-dyn-items">
@@ -149,9 +149,9 @@ const Component = () => {
             </div>
           </div>
 
-          <Link href="#swup" className="work-top_holder w-inline-block">
+          <a href="#swup" className="work-top_holder w-inline-block">
             <div className="top-text">Back to Top</div>
-          </Link>
+          </a>
         </div>
       </div>
     </>

@@ -115,13 +115,13 @@ const Component = () => {
                         <div team-sync="" role="list" className="team-col_list w-dyn-items">
                           {aboutSectionTwo?.teamMembers.map((item) =>
                             <div key={item?.slug + '-1'} team-item="team-member" role="listitem" className="team-col_item w-dyn-item">
-                              {/* <Link data-swup-animation="to-black" href={item?.link} className="team-img_holder w-inline-block"> */}
+                              {/* <a data-swup-animation="to-black" href={item?.link} className="team-img_holder w-inline-block"> */}
                               <div data-swup-animation="to-black" className="team-img_holder w-inline-block">
                                 <div className="team-img_height" />
                                 <img src={item?.picture_bw} alt="" className="team-img" />
                                 <div style={{ backgroundImage: `url(${item?.picture_color})` }} className="team-img_overlay"></div>
                               </div>
-                              {/* </Link> */}
+                              {/* </a> */}
 
                               <div className="team-name">{item?.name}</div>
 
@@ -149,13 +149,13 @@ const Component = () => {
                           <div pload-opacity="" team-sync="" role="list" className="team-list w-dyn-items">
                             {aboutSectionTwo?.teamMembers.map((item) =>
                               <div key={item?.slug + '-2'} team-item="team-member" role="listitem" className="team-list_item team-item w-dyn-item" >
-                                {/* <Link data-swup-animation="to-black" href="/team-members/alex-stewart" className="team-list_title-holder w-inline-block"> */}
+                                {/* <a data-swup-animation="to-black" href="/team-members/alex-stewart" className="team-list_title-holder w-inline-block"> */}
                                 <div data-swup-animation="to-black" className="team-list_title-holder w-inline-block">
                                   <h4 className="team-list_title">
                                     {item?.name}
                                   </h4>
                                 </div>
-                                {/* </Link> */}
+                                {/* </a> */}
                               </div>
                             )}
                           </div>
@@ -179,9 +179,9 @@ const Component = () => {
                       <div role="list" className="areas-nav_list-mob w-dyn-items">
                         {aboutSectionThree?.areas.map((item) =>
                           <div key={item?.slug} role="listitem" className="areas-nav_item w-dyn-item">
-                            <Link text-color={item?.color} href={`/areas/${item?.slug}`} className="areas-nav_link w-inline-block">
+                            <a text-color={item?.color} href={`/areas/${item?.slug}`} className="areas-nav_link w-inline-block">
                               <h4 className="areas-list_head">{item?.name}</h4>
-                            </Link>
+                            </a>
                           </div>
                         )}
                       </div>
@@ -263,14 +263,14 @@ const Component = () => {
                           role="listitem"
                           className="areas-nav_item w-dyn-item"
                         >
-                          <Link
+                          <a
                             data-swup-animation="to-black"
                             text-color={item?.color}
                             href={`/areas/${item?.slug}`}
                             className="areas-nav_link w-inline-block"
                           >
                             <h4 className="areas-list_head">{item?.name}</h4>
-                          </Link>
+                          </a>
                         </div>
                       )}
                     </div>

@@ -29,7 +29,7 @@ const Component = () => {
         <h3 className="logo-reveal">Heading</h3>
       </div>
 
-      <Link
+      <a
         data-swup-animation="to-black"
         h-effect=""
         pload=""
@@ -39,18 +39,18 @@ const Component = () => {
         <div h-item="" className="body-copy">
           <Word text="experience" />
         </div>
-      </Link>
+      </a>
 
       <div className="global-head">
         <div className="global-head_layout">
-          <Link pload="" href="/" className="head-logo_holder w-inline-block">
+          <a pload="" href="/" className="head-logo_holder w-inline-block">
             <div className="head-logo_height"></div>
             <img
               src="https://cdn.prod.website-files.com/66601c7c6b0d48cf88bbe06c/66601c7c6b0d48cf88bbe08f_logo-icon.svg"
               alt=""
               className="head-logo"
             />
-          </Link>
+          </a>
           <div pload="" className="head-page_name">
             <div className="page-name_text">Work</div>
           </div>
@@ -65,9 +65,9 @@ const Component = () => {
                 <div role="list" className="toggle-cat_list w-dyn-items">
                   {filterByArea?.map((item) => (
                     <div key={item?.link} hover-color={item?.color} role="listitem" className="toggle-cat_item w-dyn-item" >
-                      <Link data-swup-animation="to-black" h-effect="" pload-stagger="" href={item?.link} className="grid-toggle_item w-inline-block" >
+                      <a data-swup-animation="to-black" h-effect="" pload-stagger="" href={item?.link} className="grid-toggle_item w-inline-block" >
                         <Word text={item?.name} />
-                      </Link>
+                      </a>
                       <img src={item?.image} alt="" className="category-img" />
                     </div>
                   ))}
@@ -88,9 +88,9 @@ const Component = () => {
                 <div role="list" className="toggle-cat_list w-dyn-items">
                   {filterByArea?.map((item) => (
                     <div key={item?.link + '-2'} hover-color={item?.color} role="listitem" className="toggle-cat_item w-dyn-item" >
-                      <Link data-swup-animation="to-black" h-effect="" pload-stagger="" href={item?.link} className="grid-toggle_item w-inline-block" >
+                      <a data-swup-animation="to-black" h-effect="" pload-stagger="" href={item?.link} className="grid-toggle_item w-inline-block" >
                         <Word text={item?.name} />
-                      </Link>
+                      </a>
                       <img src={item?.image} alt="" className="category-img" />
                     </div>
                   ))}
@@ -119,7 +119,7 @@ const Component = () => {
                     role="listitem"
                     className="inf-work_item w-dyn-item"
                   >
-                    <Link
+                    <a
                       href={`/work/${item?.slug}`}
                       className="inf-work_link w-inline-block"
                     >
@@ -136,7 +136,7 @@ const Component = () => {
                           <div className="work-number_text">{String(index + 1).padStart(2, '0')}</div>
                         </div>
                       </div>
-                    </Link>
+                    </a>
                     <div className="category_wrap w-dyn-list">
                       <div role="list" className="category-list w-dyn-items">
                         {item?.categories.map(category => {
@@ -162,9 +162,9 @@ const Component = () => {
             </div>
           </div>
         </div>
-        <Link href="#our-work" className="work-top_holder w-inline-block">
+        <a href="#our-work" className="work-top_holder w-inline-block">
           <div className="top-text">Back to Top</div>
-        </Link>
+        </a>
       </div>
     </div>
   );

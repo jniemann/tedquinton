@@ -32,10 +32,10 @@ const Component = () => {
     <>
       <div className="page-wrapper home-page">
         <div className="mobile-text_logo">
-          <Link t-white="" pload="" href="/" aria-current="page" className="head-logo_holder w-inline-block w--current" >
+          <a t-white="" pload="" href="/" aria-current="page" className="head-logo_holder w-inline-block w--current" >
             <div className="head-logo_height" />
             <Image src={company?.logoBold} alt="" className="head-logo" />
-          </Link>
+          </a>
         </div>
 
         <MenuButton />
@@ -152,8 +152,8 @@ const Component = () => {
                       <div className="grid-img_number">{String(index + 1).padStart(2, '0')}</div>
                       <div className="grid-mobi_name">{item?.mainTitle}</div>
                     </div>
-                    <Link href="#" className="image-item_overlay w-inline-block" />
-                    {/* <Link href={`/work/${item?.slug}`} className="image-item_overlay w-inline-block" /> */}
+                    <a href="#" className="image-item_overlay w-inline-block" />
+                    {/* <a href={`/work/${item?.slug}`} className="image-item_overlay w-inline-block" /> */}
                   </div>
                 )}
               </div>
