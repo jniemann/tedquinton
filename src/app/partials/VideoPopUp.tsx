@@ -1,6 +1,6 @@
 'use client';
 import { homeSectionTwo } from '@/database/homePage';
-import Word from '../../../components/Word'
+import Word from '../../components/Word'
 
 const Component = () => {
   const { video } = homeSectionTwo

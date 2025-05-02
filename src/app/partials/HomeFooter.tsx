@@ -1,6 +1,6 @@
 "use client"
 import { mainMenu } from "@/database/mainMenu";
-import Word from '../../../components/Word'
+import Word from '../../components/Word'
 import plusIcon from '../../../assets/icons/plus_icon.svg'
 import arrowIcon from '../../../assets/icons/arrow_icon.svg'
 import { company } from "@/database/company";
